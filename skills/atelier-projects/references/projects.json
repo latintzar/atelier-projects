@@ -1033,22 +1033,37 @@
       "category": "hardware",
       "site_url": "https://atelierneyra.com/hardware/messier-57",
       "description": "Messier ’57 is an electric drum with an acoustic feel, played through an amp or guitar pedal. I developed a playable electric drum around a mesh head, microphones and physical sound modelling, exploring a wider palette while preserving the touch of head and rim playing. The prototypes were tested by Ayo Salawu and Dru Masters and exhibited at the London Design Festival.",
-      "source_status": "portfolio-case",
-      "status": "Playable physical prototypes, musician tests and an exhibited instrument.",
+      "source_status": "public-source-beta",
+      "status": "Playable physical prototypes and released browser/Pure Data instruments. The browser substitutes manual Head/Rim/Both selection for the original pickup classifier; its bass kick is a demonstration voice. Original CAD, parts and build notes are included.",
       "summary": "An electric drum with an acoustic feel.",
       "audience": "Drummers, Electronic instrument builders",
       "problem": "Drummers want more sonic range while keeping the touch and gestures they have spent years developing.",
       "features": [
         [
-          "Mechanism",
-          "Microphones capture head and rim excitation for a physical snare model. A mechanical latch controls the looseness of the synthesised snares."
+          "Physical modelling",
+          "Actual CHAIR/libpd snare, low-tuned modelled kick and shared room reverb."
+        ],
+        [
+          "Editable grooves",
+          "Ten two-bar kick/head/rim grooves, tempo and independent per-step snare loosening."
+        ],
+        [
+          "Playing controls",
+          "Head/Rim/Both excitation, hold-to-loosen latch, one volume and Stop."
+        ],
+        [
+          "Reusable source",
+          "Browser and Pd instruments, original Rhino CAD, BOM, specifications and build notes; visualisation files are separately identified."
         ]
       ],
       "decisions": [
         "The drum keeps a familiar shell, hoop, mesh head and stand.",
         "A physical control changes the snare response during playing.",
         "Prototype iterations explore the relationship between sensing, touch and sound."
-      ]
+      ],
+      "repository_url": "https://github.com/latintzar/messier57-instrument",
+      "preview_url": "https://atelierneyra.com/hardware/messier-57?play=1",
+      "documentation_url": "https://docs.atelierneyra.com/messier-57/overview/"
     },
     {
       "id": "panel-speakers",
