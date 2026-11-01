@@ -1,0 +1,875 @@
+{
+  "schema_version": 1,
+  "retrieved_on": "2026-11-01",
+  "owner": "Atelier Neyra / Peter Neyra",
+  "canonical_registry": "https://atelierneyra.com/projects/registry.json",
+  "canonical_briefs": "https://atelierneyra.com/projects/product-briefs.json",
+  "canonical_hardware": "https://atelierneyra.com/projects/hardware-registry.json",
+  "projects": [
+    {
+      "id": "ai-native-erp",
+      "name": "Rocoto",
+      "summary": "AI-native ERP for food distributors",
+      "description": "Rocoto is an AI-native ERP for food distributors. It turns messages and calls into orders, carries them through the warehouse’s night shift, and keeps printed packing sheets, handwritten weights and delivery notes linked to the same records.",
+      "site_url": "https://soyrocoto.com",
+      "repository_url": "https://github.com/latintzar/ai-native-erp",
+      "documentation_url": "https://docs.atelierneyra.com/ai-native-erp/overview/",
+      "preview_url": "https://preview.atelierneyra.com/apps/erp/app.html",
+      "source_status": "public-source-beta",
+      "project_date": "2026-10",
+      "category": "software",
+      "status": "The released source includes the original order interface, print and paper-readback implementation, provider adapters and persistent backend. The hosted app uses sample records; browser-to-persistent-backend integration, handwriting providers and physical warehouse acceptance have separate verification steps.",
+      "features": [
+        [
+          "Incoming orders",
+          "Resolve customer shorthand against product history, case conversions, substitutions and customer prices."
+        ],
+        [
+          "Packing and delivery sheets",
+          "Print the appropriate A4 or A5 sheet, with layouts for picking, final weights and delivery notes."
+        ],
+        [
+          "Paper readback",
+          "Photograph a marked packing sheet. Its QR code identifies the saved print; page registration locates each handwritten cell for review against the original order line."
+        ],
+        [
+          "Catalogue and stock",
+          "Import supplier rows, review units and conversions, generate product illustrations, and track stock and lots."
+        ],
+        [
+          "Copilot and connections",
+          "Keep model, parsing, messaging, voice and artwork adapters alongside the business records they support."
+        ]
+      ],
+      "setup_urls": [
+        "https://github.com/latintzar/ai-native-erp/blob/main/docs/providers.md",
+        "https://github.com/latintzar/ai-native-erp/blob/main/docs/backend-starter.md",
+        "https://github.com/latintzar/ai-native-erp/blob/main/RELEASE-STATUS.md"
+      ],
+      "repository_checked": {
+        "public": true,
+        "default_branch": "main",
+        "license_api": "MIT",
+        "archived": false
+      }
+    },
+    {
+      "id": "agent-workspace",
+      "name": "Harness",
+      "summary": "A Codex-based agent harness with generative UI",
+      "description": "Harness is a Codex-based, vertical-adaptable agent harness with generative UI. A business supplies its domain, tools and interfaces; the harness supplies conversations, files, jobs, approvals, spending records and an SDK for agent-built displays.",
+      "site_url": "https://atelierneyra.com/harness",
+      "repository_url": "https://github.com/latintzar/harness",
+      "documentation_url": "https://docs.atelierneyra.com/agent-workspace/overview/",
+      "preview_url": "https://preview.atelierneyra.com/apps/agent-workspace/",
+      "source_status": "public-source-beta",
+      "project_date": "2026-10",
+      "category": "software",
+      "status": "The source includes the original vertical-adaptable harness and SDK. The hosted bare workspace is a read-only visitor example with an authored display fixture. Managed agent execution needs the operator’s own OpenAI project, allowance and reachable MCP service.",
+      "features": [
+        [
+          "Vertical SDK",
+          "Declare roles, tools, recipes, data classes and optional displays for a business."
+        ],
+        [
+          "Generative UI",
+          "Use the display SDK to render domain-specific views from an agent’s work."
+        ],
+        [
+          "Persistent work",
+          "Keep conversations, scoped files and jobs with the workspace."
+        ],
+        [
+          "Supervision",
+          "Connect approvals, identity and spend accounting to agent actions."
+        ],
+        [
+          "Runtime adapters",
+          "The current source includes managed OpenAI execution; the project retains its Codex-based lineage and architecture."
+        ]
+      ],
+      "setup_urls": [
+        "https://github.com/latintzar/harness/blob/main/docs/LOCAL-WORKSPACE.md",
+        "https://github.com/latintzar/harness/blob/main/docs/OPENAI-SETUP.md"
+      ],
+      "repository_checked": {
+        "public": true,
+        "default_branch": "main",
+        "license_api": "MIT",
+        "archived": false
+      }
+    },
+    {
+      "id": "manufacturer-order-desk",
+      "name": "Manufacturer Order Desk",
+      "summary": "An AI-native order desk for construction materials manufacturers working across web and email",
+      "description": "Manufacturer Order Desk is an AI-native order desk for construction materials manufacturers working across web and email. Customers configure products and request quotes online; the sales team keeps incoming orders, product options and email requests in the same workflow.",
+      "site_url": "https://atelierneyra.com/manufacturer-order-desk",
+      "repository_url": "https://github.com/latintzar/manufacturer-order-desk",
+      "documentation_url": "https://docs.atelierneyra.com/manufacturer-order-desk/overview/",
+      "preview_url": "https://preview.atelierneyra.com/apps/manufacturer-order-desk/",
+      "source_status": "public-source-beta",
+      "project_date": "2026-10",
+      "category": "software",
+      "status": "The native app runs the original services with an authored six-article catalogue and sample requests. Client-owned catalogues, photographs and account data retain their original custody. Connected models and providers use your own setup.",
+      "features": [
+        [
+          "Order desk",
+          "Review requests with customer, pricing, products and source context."
+        ],
+        [
+          "Product catalogue",
+          "Edit articles and prices through versioned configuration."
+        ],
+        [
+          "Public configurator",
+          "Choose parts and submit specifications through the saved renderer."
+        ],
+        [
+          "Quotes and history",
+          "Retain quoted values and inspect or restore configuration history."
+        ],
+        [
+          "Agent tools",
+          "Use the original vertical SDK and harness integration for the manufacturer domain."
+        ]
+      ],
+      "setup_urls": [
+        "https://github.com/latintzar/manufacturer-order-desk/blob/main/docs/SETUP.md",
+        "https://github.com/latintzar/manufacturer-order-desk/blob/main/docs/INTEGRATIONS.md"
+      ],
+      "repository_checked": {
+        "public": true,
+        "default_branch": "main",
+        "license_api": "NOASSERTION",
+        "archived": false
+      }
+    },
+    {
+      "id": "video",
+      "name": "Video Intelligence",
+      "summary": "CCTV feeds with Cosmos-powered alerts for real-time business intelligence",
+      "description": "Video Intelligence connects CCTV feeds to NVIDIA Cosmos for automatic alerts and real-time business intelligence. A dashboard brings events and business metrics together; each event links to the source footage for review on desktop or mobile.",
+      "site_url": "https://atelierneyra.com/video",
+      "repository_url": "https://github.com/latintzar/camera-video-search",
+      "documentation_url": "https://docs.atelierneyra.com/video/overview/",
+      "preview_url": "https://preview.atelierneyra.com/apps/video/control-room/#view=location",
+      "source_status": "public-source-beta",
+      "project_date": "2026-10",
+      "category": "software",
+      "status": "The read-only native preview opens a retained retail trial with 45 recordings and source-linked footage. Its latest trial has 17 raw observations, all quarantined, and zero reviewed observations. The 68 publisher reference events and generated business history are separate from model observations. Fresh Cosmos processing, real cameras and POS integration need owned infrastructure and acceptance.",
+      "features": [
+        [
+          "CCTV and Cosmos",
+          "The original ingestion and processing pipeline connects camera recordings to NVIDIA Cosmos observations."
+        ],
+        [
+          "Dashboard and alerts",
+          "The designed product brings operational events, alert rules and business metrics together."
+        ],
+        [
+          "Event review",
+          "Open the source footage behind an event and inspect its frames."
+        ],
+        [
+          "Retail trackers",
+          "Nine deterministic trackers compute results from admitted observations."
+        ],
+        [
+          "Agent tools",
+          "The original harness exposes scoped camera, evidence and tracker tools."
+        ]
+      ],
+      "setup_urls": [
+        "https://github.com/latintzar/camera-video-search/blob/main/docs/video-setup.md",
+        "https://github.com/latintzar/camera-video-search/blob/main/.agents/skills/video-operations-setup/SKILL.md"
+      ],
+      "repository_checked": {
+        "public": true,
+        "default_branch": "main",
+        "license_api": "MIT",
+        "archived": false
+      }
+    },
+    {
+      "id": "shop-workspace",
+      "name": "Rocoto Peru",
+      "summary": "Mobile AI-native ERP matching bodegas’ Yape/Plin payments to WhatsApp orders",
+      "description": "Rocoto Peru is a mobile AI-native ERP matching bodegas’ Yape/Plin payments to WhatsApp orders. It brings sales, collections and supplier purchases together, with a working-capital design based on the shop’s trading history.",
+      "site_url": "https://atelierneyra.com/peru",
+      "repository_url": "https://github.com/latintzar/whatsapp-shop-workspace",
+      "documentation_url": "https://docs.atelierneyra.com/shop-workspace/overview/",
+      "preview_url": "https://preview.atelierneyra.com/apps/peru/bodega-pay-later.html#/prep",
+      "source_status": "public-source-beta",
+      "project_date": "2026-09",
+      "category": "software",
+      "status": "The original mobile interface, encrypted collections service, bank-connection adapters and credit exploration are in the source. The hosted shop uses sample trades and an unconnected bank state. A lender agreement, validated underwriting and funded operation remain to be commissioned.",
+      "features": [
+        [
+          "WhatsApp sales",
+          "Review orders from existing conversations, with customers, products and preparation together."
+        ],
+        [
+          "Money",
+          "Review collections, customer fiado and supplier purchases in the same shop workspace."
+        ],
+        [
+          "Payment matching",
+          "Keep payment requests, partial receipts and remaining balances attached to their order identity."
+        ],
+        [
+          "Supplier purchases and credit",
+          "Explore paying a supplier now and repaying later, with the amount, date and terms shown together."
+        ],
+        [
+          "Mobile onboarding",
+          "The source includes the Android setup and official WhatsApp connection and history workflows."
+        ]
+      ],
+      "setup_urls": [
+        "https://github.com/latintzar/whatsapp-shop-workspace/blob/main/docs/providers.md",
+        "https://github.com/latintzar/whatsapp-shop-workspace/blob/main/.agents/skills/install-shop-workspace/SKILL.md"
+      ],
+      "repository_checked": {
+        "public": true,
+        "default_branch": "main",
+        "license_api": "MIT",
+        "archived": false
+      }
+    },
+    {
+      "id": "disdat",
+      "name": "DisDat.dev",
+      "summary": "A Chrome extension for recording feedback for coding agents",
+      "description": "DisDat is a Chrome extension that records spoken feedback with the page behind it for coding agents. Talk over what you see in a tab; DisDat captures the elements, styles and page state, then uses a local LLM to turn your words into a precise request your agent can act on.",
+      "site_url": "https://disdat.dev",
+      "repository_url": "https://github.com/latintzar/disdat",
+      "documentation_url": "https://docs.atelierneyra.com/disdat/overview/",
+      "preview_url": "https://preview.atelierneyra.com/?project=disdat&entry=demo",
+      "source_status": "public-source-beta",
+      "project_date": "2026-07",
+      "category": "software",
+      "status": "The downloadable Chrome extension is a source beta. A complete recording, local transcription, target capture and rewritten task were verified in Chrome on one Mac. Local mode needs WebGPU, model downloads and disk space; initial downloads take longer than a warm recording.",
+      "features": [
+        [
+          "Record a tab",
+          "Speak and point while the extension records the page you are using."
+        ],
+        [
+          "Capture the target",
+          "Retain selectors, DOM, computed styles, framework state and runtime events with the recording."
+        ],
+        [
+          "Local transcription and briefing",
+          "Whisper transcribes your speech; Qwen rewrites the request locally while observed page facts remain separate."
+        ],
+        [
+          "Agent handoff",
+          "Save the structured capture and let the included agent tools unpack it."
+        ]
+      ],
+      "setup_urls": [
+        "https://github.com/latintzar/disdat/blob/main/skills/disdat-setup/SKILL.md",
+        "https://github.com/latintzar/disdat/blob/main/docs/configuration.md",
+        "https://github.com/latintzar/disdat/blob/main/docs/local-models.md"
+      ],
+      "repository_checked": {
+        "public": true,
+        "default_branch": "main",
+        "license_api": "MIT",
+        "archived": false
+      },
+      "distribution_url": "https://github.com/latintzar/disdat/releases/latest/download/disdat-extension.zip",
+      "distribution_kind": "extension"
+    },
+    {
+      "id": "cancha",
+      "name": "Cancha",
+      "summary": "An Android TV app to watch free Latin American TV",
+      "description": "Cancha is an Android TV app to watch free Latin American TV. Built for the 2026 World Cup, it combines a channel guide, HLS mirror selection and a rolling buffer for playback and rewind, with a companion web player.",
+      "site_url": "https://atelierneyra.com/cancha",
+      "repository_url": "https://github.com/latintzar/cancha-tv",
+      "documentation_url": "https://docs.atelierneyra.com/cancha/overview/",
+      "preview_url": "https://preview.atelierneyra.com/apps/cancha/watch",
+      "source_status": "public-source-beta",
+      "project_date": "2026-07",
+      "category": "software",
+      "status": "The Android TV source builds and has been exercised in an emulator. The hosted web companion uses authored HLS test signals. Channel metadata, feed availability and viewing rights belong to each installation.",
+      "features": [
+        [
+          "Android TV guide",
+          "Browse channels through the original native television interface."
+        ],
+        [
+          "HLS feed selection",
+          "Probe mirrors and select a healthy feed."
+        ],
+        [
+          "Playback and rewind",
+          "Play the current feed and its rolling DVR buffer."
+        ],
+        [
+          "Companion web player",
+          "Use the same channel service from a browser."
+        ]
+      ],
+      "setup_urls": [
+        "https://github.com/latintzar/cancha-tv/blob/main/README.md"
+      ],
+      "repository_checked": {
+        "public": true,
+        "default_branch": "main",
+        "license_api": "MIT",
+        "archived": false
+      }
+    },
+    {
+      "id": "renovation-marketplace",
+      "name": "Leo.casa",
+      "summary": "Renovation quotes, project chat and milestone payments",
+      "description": "Leo.casa is a renovation marketplace for homeowners and contractors. They agree on an editable quote, keep the conversation with the project, and review completed work before releasing each milestone through Stripe Connect.",
+      "site_url": "https://leo.casa",
+      "repository_url": "https://github.com/latintzar/renovation-marketplace",
+      "documentation_url": "https://docs.atelierneyra.com/renovation-marketplace/overview/",
+      "preview_url": "https://preview.atelierneyra.com/apps/renovation-marketplace/?local_role=contractor",
+      "source_status": "public-source-beta",
+      "project_date": "2026-06",
+      "category": "software",
+      "status": "The native preview runs the original React and FastAPI app with a private visitor workspace. Quote edits, messages, proof and reviews persist. Real payment and provider operations are commissioned with your own accounts.",
+      "features": [
+        [
+          "Quote canvas",
+          "Edit phases, work, materials and totals in the offer itself."
+        ],
+        [
+          "Project chat",
+          "Discuss the quote and keep messages with the project."
+        ],
+        [
+          "Variations",
+          "Review changes to the agreed work and price."
+        ],
+        [
+          "Milestone review",
+          "Submit proof, review the phase and record acceptance."
+        ],
+        [
+          "Stripe Connect",
+          "The source includes checkout, connected accounts, transfers, refunds, disputes and event handling."
+        ]
+      ],
+      "setup_urls": [
+        "https://github.com/latintzar/renovation-marketplace/blob/main/docs/setup.md"
+      ],
+      "repository_checked": {
+        "public": true,
+        "default_branch": "main",
+        "license_api": "MIT",
+        "archived": false
+      }
+    },
+    {
+      "id": "route-planner",
+      "name": "Farm-to-restaurant route planner",
+      "summary": "VROOM-based routing for farm-to-table deliveries",
+      "description": "The farm-to-restaurant route planner is a VROOM-based app for decentralised farm-to-table logistics. Combine shop orders, compare farm sourcing, and calculate pickups, deliveries, capacity and costs on Barcelona’s roads.",
+      "site_url": "https://atelierneyra.com/route-planner",
+      "repository_url": "https://github.com/latintzar/farm-to-restaurant-route-planner",
+      "documentation_url": "https://docs.atelierneyra.com/route-planner/overview/",
+      "preview_url": "https://atelierneyra.com/preview/route-planner/",
+      "source_status": "public-source-beta",
+      "project_date": "2026-05",
+      "category": "software",
+      "status": "The native hosted app calculates routes with the same planner, VROOM service and local Barcelona OSRM network supplied by the source. Its nine example baskets use fictional farm names, customers, prices and stock. A new region needs its own road data.",
+      "features": [
+        [
+          "Nine basket presets",
+          "Explore the original small-order, larger-basket, clustered-stop and dispersed-stop scenarios, or build your own."
+        ],
+        [
+          "Farm sourcing",
+          "Compare the products and quantities available across farms."
+        ],
+        [
+          "Real road routes",
+          "Use VROOM and a regional OSRM network to calculate Barcelona street routes."
+        ],
+        [
+          "Delivery economics",
+          "Read goods, van, driver, distance and time together."
+        ],
+        [
+          "Mobile order editing",
+          "Edit quantities and calculate above the map, with touch-sized controls and visible capacity feedback."
+        ]
+      ],
+      "setup_urls": [
+        "https://github.com/latintzar/farm-to-restaurant-route-planner/blob/main/server/native/README.md",
+        "https://github.com/latintzar/farm-to-restaurant-route-planner/blob/main/skills/run-route-planner/SKILL.md"
+      ],
+      "repository_checked": {
+        "public": true,
+        "default_branch": "main",
+        "license_api": "MIT",
+        "archived": false
+      }
+    },
+    {
+      "id": "vitrina",
+      "name": "Vitrina Local",
+      "summary": "Turn recipe Reels & TikToks into shopping baskets from local grocers",
+      "description": "Vitrina Local is an agentic commerce app that turns recipe Reels and TikToks into shopping baskets from local grocers. Its shopping agent matches ingredients to nearby stock and returns a basket link in Instagram chat. The original app also includes recipe discovery, saved recipes and video-guided cooking.",
+      "site_url": "https://atelierneyra.com/vitrina",
+      "repository_url": "https://github.com/latintzar/vitrina-local",
+      "documentation_url": "https://docs.atelierneyra.com/vitrina/overview/",
+      "preview_url": "https://preview.atelierneyra.com/apps/vitrina-local/",
+      "source_status": "public-source-beta",
+      "project_date": "2026-05",
+      "category": "software",
+      "status": "The original Discover, recipe and basket app and the Instagram-to-cart service are preserved. The hosted app uses authored recipes and shop stock. The animated checkout study illustrates Stripe payment and delivery confirmation; a live Stripe and retailer fulfilment connection is a continuation of the project.",
+      "features": [
+        [
+          "Discover and recipe book",
+          "Browse recipe recommendations and keep saved recipes together."
+        ],
+        [
+          "Video and instructions",
+          "Follow the original recipe video beside ingredients and instructions."
+        ],
+        [
+          "Local stock and baskets",
+          "Match ingredients and pack quantities, grouped by the shops supplying them."
+        ],
+        [
+          "Instagram intake",
+          "Receive a shared Reel, extract its recipe and return a basket-review link through the companion integration."
+        ],
+        [
+          "Shop inventory",
+          "The original work includes the Microinvest POS integration contract and a documented read-only shop-lab prototype."
+        ],
+        [
+          "Checkout in chat",
+          "Return a local-shop basket link to the Instagram conversation. The checkout study illustrates a Stripe payment link and confirmation."
+        ]
+      ],
+      "setup_urls": [
+        "https://github.com/latintzar/vitrina-local/blob/main/docs/status.md",
+        "https://github.com/latintzar/vitrina-local/blob/main/docs/architecture.md"
+      ],
+      "repository_checked": {
+        "public": true,
+        "default_branch": "main",
+        "license_api": "MIT",
+        "archived": false
+      }
+    },
+    {
+      "id": "social-recipes",
+      "name": "Social Recipes",
+      "summary": "An Instagram agent runtime that turns Reels into recipes",
+      "description": "Social Recipes is an Instagram agent runtime that turns shared Reels into recipes. It resolves the underlying video, extracts ingredients and instructions, and replies with the recipe in chat. The reusable source preserves its webhook, CDN resolver, extractor and timed video player.",
+      "site_url": "https://atelierneyra.com/social-recipes",
+      "repository_url": "https://github.com/latintzar/social-recipes-kit",
+      "documentation_url": "https://docs.atelierneyra.com/social-recipes/overview/",
+      "source_status": "public-source-beta",
+      "project_date": "2026-05",
+      "category": "software",
+      "status": "The published kit preserves the Instagram webhook and reply helpers, CDN resolver, recipe extractor and timed player. Running the Instagram flow uses an operator-owned Meta app and vision provider. The preview illustrates the conversation; the separate original agent runtime is being reconciled with the published components.",
+      "features": [
+        [
+          "Instagram agent runtime",
+          "Receive shared Reels through the Instagram webhook, resolve their media and return a structured recipe in chat."
+        ],
+        [
+          "Reel and CDN resolution",
+          "Use the original extraction and Instagram CDN-resolution paths to recover usable media."
+        ],
+        [
+          "Recipe extraction",
+          "Turn video and frames into structured recipe information through the configured vision provider."
+        ],
+        [
+          "Recipe types",
+          "Share the recipe contract between extraction and downstream apps."
+        ],
+        [
+          "Timed video player",
+          "Embed the reusable React recipe-video player."
+        ]
+      ],
+      "setup_urls": [
+        "https://github.com/latintzar/social-recipes-kit/blob/main/INSTAGRAM_SETUP.md",
+        "https://github.com/latintzar/social-recipes-kit/blob/main/README.md"
+      ],
+      "repository_checked": {
+        "public": true,
+        "default_branch": "main",
+        "license_api": "MIT",
+        "archived": false
+      },
+      "distribution_url": "https://github.com/latintzar/social-recipes-kit",
+      "distribution_kind": "source"
+    },
+    {
+      "id": "hermes-caller",
+      "name": "Hermes Caller",
+      "summary": "A Twilio dialler with diarised transcripts and Hermes debriefs",
+      "description": "Hermes Caller is a Twilio dialler with diarised call transcription and Hermes debriefs. The Android app records customer-discovery calls, Deepgram Nova-3 produces multilingual transcripts, and Hermes turns the conversation into a debrief.",
+      "site_url": "https://atelierneyra.com/hermes-caller",
+      "repository_url": "https://github.com/latintzar/hermes-caller",
+      "documentation_url": "https://docs.atelierneyra.com/hermes-caller/overview/",
+      "source_status": "public-source-beta",
+      "project_date": "2026-05",
+      "category": "software",
+      "status": "The Android app, Python server, transcription command and generic discovery-call coach skill are published. The downloadable Android preview starts with empty server configuration. Calling uses an owned Twilio server, and transcription uses Deepgram; the original private Hermes debrief connects through the transcript handoff.",
+      "features": [
+        [
+          "Native Android calling",
+          "Use Twilio’s Voice SDK with a short-lived token from your own server."
+        ],
+        [
+          "Private server setup",
+          "Configure the app’s HTTPS server and access key on the device."
+        ],
+        [
+          "Dual-channel recordings",
+          "Retain each call’s two channels when recording is enabled."
+        ],
+        [
+          "Deepgram transcripts",
+          "Run the opt-in Nova-3 multilingual and speaker parsing workflow."
+        ],
+        [
+          "Hermes debriefs",
+          "Pass the diarised transcript to Hermes for a customer-discovery debrief. The portable source includes a generic discovery-call coach skill."
+        ]
+      ],
+      "setup_urls": [
+        "https://github.com/latintzar/hermes-caller/blob/main/README.md"
+      ],
+      "repository_checked": {
+        "public": true,
+        "default_branch": "main",
+        "license_api": "MIT",
+        "archived": false
+      },
+      "distribution_url": "https://github.com/latintzar/hermes-caller/releases/download/v5.8-preview/hermes-caller-v5.8-debug.apk",
+      "distribution_kind": "android"
+    },
+    {
+      "id": "leo-estimates",
+      "name": "Leo Estimate",
+      "summary": "Room-by-room renovation estimates from a property listing",
+      "description": "Leo Estimate is a renovation estimator for Spanish properties. It turns a listing into a room-by-room scope, a priced bill of quantities and before-and-after images, with a printable report for the next conversation.",
+      "site_url": "https://atelierneyra.com/renovation-estimates",
+      "repository_url": "https://github.com/latintzar/renovation-estimates",
+      "documentation_url": "https://docs.atelierneyra.com/leo-estimates/overview/",
+      "preview_url": "https://preview.atelierneyra.com/apps/estimates/listings",
+      "source_status": "public-source-beta",
+      "project_date": "2026-03",
+      "category": "software",
+      "status": "The native preview includes three authored properties and complete cached reports, with 24 calculated items per property. It uses the original interface and recovered project images. Fresh property intake, analysis, image generation and current local prices need their own data and configured providers.",
+      "features": [
+        [
+          "Property report",
+          "Keep listing details, photographs, rooms and comparables together."
+        ],
+        [
+          "Before and after",
+          "Use the original image comparison to explore a proposed renovation."
+        ],
+        [
+          "Bill of quantities",
+          "Inspect room-level work, measurements, materials, labour and price evidence."
+        ],
+        [
+          "Printable estimate",
+          "Carry the itemized scope and totals into a report."
+        ],
+        [
+          "Analysis pipeline",
+          "Continue with the original FastAPI services, durable workers and deterministic costing modules."
+        ]
+      ],
+      "setup_urls": [
+        "https://github.com/latintzar/renovation-estimates/blob/main/docs/setup.md",
+        "https://github.com/latintzar/renovation-estimates/blob/main/docs/providers.md"
+      ],
+      "repository_checked": {
+        "public": true,
+        "default_branch": "main",
+        "license_api": "MIT",
+        "archived": false
+      }
+    },
+    {
+      "id": "home-matching",
+      "name": "Home Matching",
+      "summary": "AI-native property scanner across platforms based on the person's lifestyle",
+      "description": "Home Matching is an AI-native property scanner across platforms, based on a person’s lifestyle. It turns a household’s routines, budget and priorities into a home search, then helps compare listings, save candidates and prepare viewings.",
+      "site_url": "https://atelierneyra.com/home-matching",
+      "repository_url": "https://github.com/latintzar/home-matching",
+      "documentation_url": "https://docs.atelierneyra.com/home-matching/overview/",
+      "preview_url": "https://preview.atelierneyra.com/apps/home-matching/dashboard",
+      "source_status": "public-source-beta",
+      "project_date": "2025-12",
+      "category": "software",
+      "status": "The native app opens eight authored homes and deterministically ranks them against household priorities. Favourites, notes and preference changes use a private visitor workspace. Fresh property feeds, mapping, commute and voice providers need their own setup and household validation.",
+      "features": [
+        [
+          "Household profile",
+          "Capture required conditions, preferences and their relative importance."
+        ],
+        [
+          "Explainable ranking",
+          "Apply dealbreakers before weighted matching and show the fit and concerns."
+        ],
+        [
+          "Property reports",
+          "Inspect rooms, location and the evidence behind a recommendation."
+        ],
+        [
+          "Shortlist and viewings",
+          "Save favourites and keep viewing notes."
+        ],
+        [
+          "Voice and intake",
+          "The source retains the original conversational, map and ingestion workflows."
+        ]
+      ],
+      "setup_urls": [
+        "https://github.com/latintzar/home-matching/blob/main/docs/setup.md",
+        "https://github.com/latintzar/home-matching/blob/main/docs/native-workspace.md"
+      ],
+      "repository_checked": {
+        "public": true,
+        "default_branch": "main",
+        "license_api": "MIT",
+        "archived": false
+      }
+    },
+    {
+      "id": "retail-location-similarity",
+      "name": "Retail Location Similarity",
+      "summary": "Find retail locations similar to your best-performing stores",
+      "description": "Retail Location Similarity is a geospatial tool for finding locations that resemble your best-performing stores. It converts map data into H3 feature vectors, compares a reference location with candidate areas and ranks the matches on a map.",
+      "site_url": "https://atelierneyra.com/retail-location-similarity",
+      "repository_url": "https://github.com/latintzar/retail-location-similarity",
+      "documentation_url": "https://docs.atelierneyra.com/retail-location-similarity/overview/",
+      "preview_url": "https://preview.atelierneyra.com/apps/retail-location-similarity/",
+      "source_status": "public-source-beta",
+      "project_date": "2025-12",
+      "category": "software",
+      "status": "The reusable scorer runs from a fresh clone. Its hosted example computes matches from 90 generated H3 records across five features. The original London matrix contains 131,596 cells and 1,956 numeric features; a full comparison was verified privately. That historical data remains separate while its original attribution is reconciled. Global matrix-building code is preserved.",
+      "features": [
+        [
+          "London feature matrix",
+          "The verified private 54 MB matrix contains 131,596 H3 resolution-10 locations and 1,956 numeric features. Retained builders use Overture Maps Places, Base, Buildings and Transportation; exact per-record provenance is not retained."
+        ],
+        [
+          "Leo similarity score",
+          "Normalize feature dimensions and compute Leo’s historical distance calibration and logistic similarity score; independently expressed functions matched the original on ten real full-dimensional rows."
+        ],
+        [
+          "Nearby exclusion and map",
+          "Exclude the reference cell’s 15-ring neighbourhood and display ranked H3 matches."
+        ],
+        [
+          "Synthetic example",
+          "A standalone companion runs the scorer on generated sample features; values are illustrative and not observations of London."
+        ],
+        [
+          "Global pipeline source",
+          "Global build scripts and estimates are retained; a completed global matrix has not been verified."
+        ]
+      ],
+      "setup_urls": [
+        "https://github.com/latintzar/retail-location-similarity/blob/main/README.md"
+      ],
+      "repository_checked": {
+        "public": true,
+        "default_branch": "main",
+        "license_api": "MIT",
+        "archived": false
+      }
+    },
+    {
+      "id": "geospatial-agent",
+      "name": "Geospatial Agent",
+      "summary": "An AI agent for querying and exploring maps through chat",
+      "description": "Geospatial Agent is a chat-based workspace for querying geographic data and building interactive map layers. It combines agent tools, Overture data, H3 grids and a deck.gl canvas for examining places, buildings, roads and land use.",
+      "site_url": "https://atelierneyra.com/geospatial-agent",
+      "repository_url": "https://github.com/latintzar/geospatial-agent",
+      "documentation_url": "https://docs.atelierneyra.com/geospatial-agent/overview/",
+      "preview_url": "https://preview.atelierneyra.com/apps/geospatial-agent/",
+      "source_status": "public-source-beta",
+      "project_date": "2025-12",
+      "category": "software",
+      "status": "The recovered Next.js and deck.gl console builds with TypeScript and lint checks passing. Its hosted example shows a computed synthetic retail comparison through the original map renderer. Connect your own model, data and provider accounts to run fresh agent work.",
+      "features": [
+        [
+          "Chat and streamed progress",
+          "Source includes chat, process steps, plan and thought panels driven by streamed backend events."
+        ],
+        [
+          "Map layers",
+          "Next.js, deck.gl and Mapbox components display and control geographic layers."
+        ],
+        [
+          "Geospatial tools",
+          "Backend source includes Overture, demographics, agriculture, climate, routes, news and other tool adapters; each requires its own data and runtime validation."
+        ],
+        [
+          "Similarity mode",
+          "The source provides a location-selection mode that sends an H3 similarity query and renders returned layers."
+        ]
+      ],
+      "setup_urls": [
+        "https://github.com/latintzar/geospatial-agent/blob/main/README.md",
+        "https://github.com/latintzar/geospatial-agent/blob/main/DATA-RIGHTS-AND-PROVENANCE.md"
+      ],
+      "repository_checked": {
+        "public": true,
+        "default_branch": "main",
+        "license_api": "MIT",
+        "archived": false
+      }
+    },
+    {
+      "id": "leo-vibe-maps",
+      "name": "Leo Vibe Maps",
+      "summary": "An Airbnb map extension that highlights neighbourhoods by vibe",
+      "description": "Leo Vibe Maps is a Chrome extension that highlights neighbourhoods by vibe on accommodation search maps. Open a map, show the five original Barcelona areas and inspect their labels. Custom areas use your own Gemini key.",
+      "site_url": "https://atelierneyra.com/vibe-maps",
+      "repository_url": "https://github.com/latintzar/leo-vibe-maps",
+      "documentation_url": "https://docs.atelierneyra.com/leo-vibe-maps/overview/",
+      "preview_url": "https://preview.atelierneyra.com/apps/vibe-maps/",
+      "source_status": "public-source-beta",
+      "project_date": "2025-12",
+      "category": "software",
+      "status": "The source beta loads as an unpacked Chrome extension. On a live Airbnb Barcelona search, the original integration created all five neighbourhood circles and zoomed to fit. The web example exposes the same five areas. Custom-area requests use a visitor’s own Gemini key for that request.",
+      "features": [
+        [
+          "Map overlays",
+          "Draw neighbourhood circles on the supported page map; hover and click reveal area information and zoom."
+        ],
+        [
+          "Barcelona examples",
+          "Use the source’s fixed Gothic Quarter, El Born, Gràcia, Barceloneta and Eixample areas."
+        ],
+        [
+          "Custom areas",
+          "The popup and background service worker include a Gemini-backed path from a trip description to structured areas."
+        ],
+        [
+          "Site integration",
+          "Manifest V3 content scripts and site-specific handling target Airbnb, Booking.com and Google Maps routes; current compatibility needs verification."
+        ]
+      ],
+      "setup_urls": [
+        "https://github.com/latintzar/leo-vibe-maps/blob/main/README.md"
+      ],
+      "repository_checked": {
+        "public": true,
+        "default_branch": "main",
+        "license_api": "MIT",
+        "archived": false
+      },
+      "distribution_url": "https://github.com/latintzar/leo-vibe-maps/releases/download/v0.1.0-source-beta/leo-vibe-maps.zip",
+      "distribution_kind": "extension"
+    },
+    {
+      "id": "messier-57",
+      "name": "Messier ’57",
+      "category": "hardware",
+      "site_url": "https://atelierneyra.com/hardware/messier-57",
+      "description": "An electric drum, with an acoustic feel, plugged right into an amp or guitar pedal.",
+      "source_status": "portfolio-case",
+      "status": "Read the case for concept, prototype and original process evidence."
+    },
+    {
+      "id": "panel-speakers",
+      "name": "Panel Speakers",
+      "category": "hardware",
+      "site_url": "https://atelierneyra.com/hardware/panel-speakers",
+      "description": "Panel Speakers is a four-channel spatial audio system I built for the Architectural Association’s club night at Egg London. It was the world’s first spatial audio system with DML speakers in a club.",
+      "source_status": "public-build-record",
+      "status": "A public BOM, build, signal-chain and design-decision record accompanies the original recordings. Inspect its listed remaining records before planning a fabrication build.",
+      "repository_url": "https://github.com/latintzar/panel-speakers",
+      "documentation_url": "https://github.com/latintzar/panel-speakers/tree/main/docs"
+    },
+    {
+      "id": "selva",
+      "name": "Selva",
+      "category": "hardware",
+      "site_url": "https://atelierneyra.com/hardware/selva",
+      "description": "Selva is a biodiversity monitoring venture built around an airborne DNA sampler. Its early prototype draws air through a custom filter cartridge for lab sequencing, helping farms understand the life around them.",
+      "source_status": "portfolio-case",
+      "status": "Read the case for concept, prototype and original process evidence."
+    },
+    {
+      "id": "speaker-orchestra",
+      "name": "Speaker Orchestra",
+      "category": "hardware",
+      "site_url": "https://atelierneyra.com/hardware/speaker-orchestra",
+      "description": "Speaker Orchestra is an exploration of instrument-specific speakers and acoustic radiation patterns.",
+      "source_status": "portfolio-case",
+      "status": "Read the case for concept, prototype and original process evidence."
+    },
+    {
+      "id": "sextet",
+      "name": "Sextet",
+      "category": "hardware",
+      "site_url": "https://atelierneyra.com/hardware/sextet",
+      "description": "Sextet is a kinetic sculpture that turns the rhythms of individual musical instruments into movement.",
+      "source_status": "portfolio-case",
+      "status": "Read the case for concept, prototype and original process evidence."
+    },
+    {
+      "id": "spatial-chamber",
+      "name": "Spatial Chamber",
+      "category": "hardware",
+      "site_url": "https://atelierneyra.com/hardware/spatial-chamber",
+      "description": "Spatial Chamber is a 15-speaker spatial audio experience built around Sylvie Guillem’s 2016 performance of “Bolero”. I staged it in an RCA photography studio so visitors could move among the sounds of the orchestra.",
+      "source_status": "portfolio-case",
+      "status": "Read the case for concept, prototype and original process evidence."
+    },
+    {
+      "id": "improv-coach",
+      "name": "Improvisation Coach",
+      "category": "hardware",
+      "site_url": "https://atelierneyra.com/hardware/improv-coach",
+      "description": "Improvisation Coach is a practice device with a built-in synthesizer that guides players through improvisation exercises.",
+      "source_status": "portfolio-case",
+      "status": "Read the case for concept, prototype and original process evidence."
+    },
+    {
+      "id": "klara",
+      "name": "Klara",
+      "category": "hardware",
+      "site_url": "https://atelierneyra.com/hardware/klara",
+      "description": "Klara is a behind-the-head headset that uses time-of-flight (ToF) sensors and spatial audio to tell you what’s around you.",
+      "source_status": "portfolio-case",
+      "status": "Read the case for concept, prototype and original process evidence."
+    },
+    {
+      "id": "sound-to-movement",
+      "name": "Sound to Movement",
+      "category": "hardware",
+      "site_url": "https://atelierneyra.com/hardware/sound-to-movement",
+      "description": "Sound to Movement is a book exploring how dancers turn sound into movement.",
+      "source_status": "portfolio-case",
+      "status": "Read the case for concept, prototype and original process evidence."
+    },
+    {
+      "id": "economist",
+      "name": "Economist reading prototype",
+      "category": "software-case",
+      "description": "Weekly and personal editions, reading progress, audio and voice entry.",
+      "site_url": "https://atelierneyra.com/economist/",
+      "source_status": "text-case",
+      "status": "Permitted text case; original event source remains private."
+    }
+  ]
+}

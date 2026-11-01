@@ -1,0 +1,4 @@
+interface:
+  display_name: "Atelier Neyra Projects"
+  short_description: "Find, try and build on Atelier Neyra projects"
+  default_prompt: "Use $atelier-projects to find a relevant Atelier Neyra project and help me try or build on it."
