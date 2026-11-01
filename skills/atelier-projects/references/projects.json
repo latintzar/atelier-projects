@@ -51,7 +51,23 @@
         "default_branch": "main",
         "license_api": "MIT",
         "archived": false
-      }
+      },
+      "audience": "Food distributors taking restaurant orders and preparing fresh goods overnight.",
+      "problem": "Orders arrive in WhatsApp, voice notes, email and calls. Warehouse teams need to identify the right product quickly, prepare it, record its actual weight and get the paperwork out before the delivery run.",
+      "decisions": [
+        "Paper keeps the warehouse’s existing preparation workflow. A saved print manifest gives every cell an address, so readback can match a weight to its exact line.",
+        "The order stays the main business object across conversations, preparation, stock and documents.",
+        "The design grew through two months with warehouse design partners, with speed during the night shift as the central constraint."
+      ],
+      "flow": [
+        "Customer message or call",
+        "Reviewed order",
+        "Printed packing sheet",
+        "Actual weight written on paper",
+        "QR and phone photo",
+        "Reviewed weights and delivery note"
+      ],
+      "setup_url": "https://github.com/latintzar/ai-native-erp/blob/main/docs/providers.md"
     },
     {
       "id": "agent-workspace",
@@ -97,7 +113,21 @@
         "default_branch": "main",
         "license_api": "MIT",
         "archived": false
-      }
+      },
+      "audience": "Developers building an agent application for a particular industry or business workflow.",
+      "problem": "A business agent needs a place to work: persistent context, scoped tools, credentials, approvals and interfaces for its results. Rebuilding that framework for every vertical makes the domain work harder to maintain.",
+      "decisions": [
+        "The framework owns shared infrastructure; the vertical owns business meaning.",
+        "Tools and displays have declared contracts, so a new industry can build on the same harness."
+      ],
+      "flow": [
+        "Define a vertical",
+        "Give a role tools and recipes",
+        "Run supervised agent work",
+        "Render a domain display",
+        "Retain work and evidence"
+      ],
+      "setup_url": "https://github.com/latintzar/harness/blob/main/docs/OPENAI-SETUP.md"
     },
     {
       "id": "manufacturer-order-desk",
@@ -143,7 +173,21 @@
         "default_branch": "main",
         "license_api": "NOASSERTION",
         "archived": false
-      }
+      },
+      "audience": "Manufacturers handling product specifications, quotations and customer orders.",
+      "problem": "A customer request needs to become a clear product specification and quote, while catalogues and prices keep changing. Sales needs to keep the original request, chosen parts and quoted values together.",
+      "decisions": [
+        "Saved quotes keep their quoted values as the catalogue evolves.",
+        "The public configurator and internal desk use the same saved configuration and order store."
+      ],
+      "flow": [
+        "Customer specification",
+        "Product selection",
+        "Saved quotation",
+        "Order desk",
+        "Agent-assisted follow-up"
+      ],
+      "setup_url": "https://github.com/latintzar/manufacturer-order-desk/blob/main/docs/SETUP.md"
     },
     {
       "id": "video",
@@ -153,7 +197,7 @@
       "site_url": "https://atelierneyra.com/video",
       "repository_url": "https://github.com/latintzar/camera-video-search",
       "documentation_url": "https://docs.atelierneyra.com/video/overview/",
-      "preview_url": "https://preview.atelierneyra.com/apps/video/control-room/#view=location",
+      "preview_url": "https://preview.atelierneyra.com/apps/video/control-room/#view=location&period=year",
       "source_status": "public-source-beta",
       "project_date": "2026-10",
       "category": "software",
@@ -189,7 +233,21 @@
         "default_branch": "main",
         "license_api": "MIT",
         "archived": false
-      }
+      },
+      "audience": "Businesses and developers connecting security cameras to operational alerts and business intelligence.",
+      "problem": "Security cameras capture the business all day. Operators need relevant events, timely alerts and useful metrics linked to the footage that explains them.",
+      "decisions": [
+        "A model observation keeps its source identity and frame location.",
+        "Evidence admission and deterministic tracker calculations are separate from model generation."
+      ],
+      "flow": [
+        "CCTV feed",
+        "Cosmos processing",
+        "Events and alert rules",
+        "Dashboard and source-video review",
+        "Reviewed business metrics"
+      ],
+      "setup_url": "https://github.com/latintzar/camera-video-search/blob/main/docs/video-setup.md"
     },
     {
       "id": "shop-workspace",
@@ -235,7 +293,22 @@
         "default_branch": "main",
         "license_api": "MIT",
         "archived": false
-      }
+      },
+      "audience": "Bodega owners who trade through WhatsApp and collect through Yape or Plin.",
+      "problem": "The order is in a chat, the payment is in a wallet and the next stock purchase needs cash. A shop owner needs a clear view of the money tied to each trade and the obligations coming next.",
+      "decisions": [
+        "The shop’s existing chats are the starting point. Merchant confirmation turns uncertain history into records the owner can rely on.",
+        "Customer fiado and the shop’s working-capital credit are different obligations and have different language.",
+        "Credit indicators and offer exploration are presented alongside their lender and underwriting requirements."
+      ],
+      "flow": [
+        "WhatsApp order",
+        "Shop review",
+        "Yape or Plin payment",
+        "Matched trade history",
+        "Supplier purchase and credit assessment"
+      ],
+      "setup_url": "https://github.com/latintzar/whatsapp-shop-workspace/blob/main/docs/providers.md"
     },
     {
       "id": "disdat",
@@ -280,7 +353,21 @@
         "archived": false
       },
       "distribution_url": "https://github.com/latintzar/disdat/releases/latest/download/disdat-extension.zip",
-      "distribution_kind": "extension"
+      "distribution_kind": "extension",
+      "audience": "Designers and developers giving a coding agent feedback on a website.",
+      "problem": "A spoken comment such as ‘make this button easier to see’ loses its target when it reaches a coding agent. Screenshots show the pixels; the agent also needs the element, its styles and what the page was doing.",
+      "decisions": [
+        "Requested changes and observed styles are separate. The small local model rewrites the request; deterministic capture preserves the facts.",
+        "The default extension runs transcription and briefing locally after downloading its models. Optional provider connections have their own configuration."
+      ],
+      "flow": [
+        "Open a browser tab",
+        "Record, speak and point",
+        "Capture page context",
+        "Transcribe and clarify locally",
+        "Give the capture to your agent"
+      ],
+      "setup_url": "https://github.com/latintzar/disdat/blob/main/docs/configuration.md"
     },
     {
       "id": "cancha",
@@ -321,7 +408,20 @@
         "default_branch": "main",
         "license_api": "MIT",
         "archived": false
-      }
+      },
+      "audience": "Latin American viewers using an Android TV and a personal guide of internet channels.",
+      "problem": "Internet channels have different streams and mirrors. Watching them on a television needs a usable channel guide, healthy feed selection and playback that can recover or rewind.",
+      "decisions": [
+        "The TV app and browser companion share the channel and playback backend.",
+        "A bounded buffer makes the rewind window explicit."
+      ],
+      "flow": [
+        "Channel guide",
+        "Healthy stream selection",
+        "Live playback",
+        "Buffered rewind"
+      ],
+      "setup_url": "https://github.com/latintzar/cancha-tv/blob/main/docs/setup.md"
     },
     {
       "id": "renovation-marketplace",
@@ -366,7 +466,21 @@
         "default_branch": "main",
         "license_api": "MIT",
         "archived": false
-      }
+      },
+      "audience": "Homeowners planning a renovation and contractors quoting and delivering it.",
+      "problem": "The quote, conversation, evidence of work and payments often live in different places. Both sides need a shared understanding of what was agreed, what changed and what is ready to pay.",
+      "decisions": [
+        "The quote acts as a shared canvas inside the conversation, so scope and discussion remain connected.",
+        "Payments follow reviewed milestones, with financial events and variations modeled explicitly."
+      ],
+      "flow": [
+        "Quote and conversation",
+        "Agreed phases",
+        "Work and proof",
+        "Homeowner review",
+        "Milestone payment"
+      ],
+      "setup_url": "https://github.com/latintzar/renovation-marketplace/blob/main/docs/setup.md"
     },
     {
       "id": "route-planner",
@@ -412,7 +526,21 @@
         "default_branch": "main",
         "license_api": "MIT",
         "archived": false
-      }
+      },
+      "audience": "A logistics service coordinating small farms and independent food shops or restaurants.",
+      "problem": "Twenty farms around Barcelona said they could not deliver below their minimum order quantities. Twenty shops said they could not afford those quantities. Pooling orders creates a routing and sourcing problem: which farms, which stops and what delivery cost?",
+      "decisions": [
+        "Presets keep basket size and stop density visible as separate assumptions.",
+        "Routing and cost assumptions stay editable, so the logistics service can test its actual operating model."
+      ],
+      "flow": [
+        "Choose a basket or add orders",
+        "Compare farm supply",
+        "Calculate the route",
+        "Review capacity and costs",
+        "Open the road itinerary"
+      ],
+      "setup_url": "https://github.com/latintzar/farm-to-restaurant-route-planner/blob/main/server/native/README.md"
     },
     {
       "id": "vitrina",
@@ -462,7 +590,23 @@
         "default_branch": "main",
         "license_api": "MIT",
         "archived": false
-      }
+      },
+      "audience": "People cooking from online recipes and independent neighbourhood shops listing their stock.",
+      "problem": "Recipe inspiration is easy to find; a small shop’s available inventory is harder to discover. Vitrina connects the meal someone wants to cook with the independent shops around them.",
+      "decisions": [
+        "The consumer app is built above the independent Social Recipes extraction and player modules.",
+        "Ingredients retain their recipe grouping while the basket groups products by shop.",
+        "The product connects online recipe discovery to physical shop availability.",
+        "The visual checkout study shows Instagram, a Stripe-style payment page and an order confirmation; the connected original release documents basket review and click-and-collect."
+      ],
+      "flow": [
+        "Share a recipe Reel in Instagram",
+        "Extract the recipe",
+        "Match ingredients to nearby shop stock",
+        "Return the basket link in chat",
+        "Review and check out the basket"
+      ],
+      "setup_url": "https://github.com/latintzar/vitrina-local/blob/main/docs/architecture.md"
     },
     {
       "id": "social-recipes",
@@ -509,7 +653,21 @@
         "archived": false
       },
       "distribution_url": "https://github.com/latintzar/social-recipes-kit",
-      "distribution_kind": "source"
+      "distribution_kind": "source",
+      "audience": "People collecting cooking recipes through Instagram, and developers building recipe agents.",
+      "problem": "Cooking Reels keep ingredients and instructions inside a video. A chat agent makes that information usable as a structured recipe while keeping the source video connected.",
+      "decisions": [
+        "Extraction is a reusable layer. Discovery, local inventory, baskets and Instagram commerce live in downstream applications.",
+        "The player keeps the source video with the structured recipe."
+      ],
+      "flow": [
+        "Share a Reel in Instagram",
+        "Receive and resolve the shared video",
+        "Extract ingredients and steps with a vision model",
+        "Return the recipe in chat"
+      ],
+      "preview_url": "",
+      "setup_url": "https://github.com/latintzar/social-recipes-kit/blob/main/docs/AGENT-SETUP.md"
     },
     {
       "id": "hermes-caller",
@@ -555,7 +713,23 @@
         "archived": false
       },
       "distribution_url": "https://github.com/latintzar/hermes-caller/releases/download/v5.8-preview/hermes-caller-v5.8-debug.apk",
-      "distribution_kind": "android"
+      "distribution_kind": "android",
+      "audience": "People making customer-discovery calls through their own Twilio account.",
+      "problem": "Calling, recording and turning conversations into useful discovery notes involves several tools. A dedicated dialer can keep the call and its recording connected to a controlled transcription workflow.",
+      "decisions": [
+        "The Android app requests short-lived call tokens; provider credentials stay on the server.",
+        "Recording and transcription are explicit operational choices with their own configuration.",
+        "The call app and the Hermes debrief are separate stages connected by the transcript file."
+      ],
+      "flow": [
+        "Android dialler",
+        "Own Twilio service",
+        "Optional dual-channel recording",
+        "Deepgram diarised transcript",
+        "Hermes debrief"
+      ],
+      "preview_url": "",
+      "setup_url": "https://github.com/latintzar/hermes-caller/blob/main/docs/AGENT-SETUP.md"
     },
     {
       "id": "leo-estimates",
@@ -601,7 +775,21 @@
         "default_branch": "main",
         "license_api": "MIT",
         "archived": false
-      }
+      },
+      "audience": "Property buyers and investors assessing a renovation, and the contractors helping them.",
+      "problem": "A property listing shows what is there. A buyer also needs to understand the work, quantities and likely cost before deciding what to buy or asking for contractor quotes.",
+      "decisions": [
+        "The report keeps the visual proposal and its priced work in one context.",
+        "Deterministic costing makes the estimate’s arithmetic traceable to quantities and rates."
+      ],
+      "flow": [
+        "Property listing",
+        "Room condition and scope",
+        "Quantities and unit rates",
+        "Before-and-after comparison",
+        "Itemized report"
+      ],
+      "setup_url": "https://github.com/latintzar/renovation-estimates/blob/main/docs/setup.md"
     },
     {
       "id": "home-matching",
@@ -647,7 +835,21 @@
         "default_branch": "main",
         "license_api": "MIT",
         "archived": false
-      }
+      },
+      "audience": "People choosing a home in Spain and the agents helping them.",
+      "problem": "Two households can look at the same property and need different things. A useful search needs to explain how each home fits the people moving into it.",
+      "decisions": [
+        "A property’s analysis can be reused. Changing preferences reranks that evidence through deterministic scoring.",
+        "Required conditions are checked before softer preferences, so a high score cannot quietly erase a dealbreaker."
+      ],
+      "flow": [
+        "Describe the household",
+        "Analyse property evidence",
+        "Apply requirements and weights",
+        "Compare recommendations",
+        "Shortlist and view"
+      ],
+      "setup_url": "https://github.com/latintzar/home-matching/blob/main/docs/setup.md"
     },
     {
       "id": "retail-location-similarity",
@@ -692,7 +894,24 @@
         "default_branch": "main",
         "license_api": "MIT",
         "archived": false
-      }
+      },
+      "audience": "Retail operators and analysts comparing potential locations with a known area.",
+      "problem": "An operator needs to find places with similar built environment, amenity and access characteristics instead of judging candidates from location names alone.",
+      "decisions": [
+        "Use H3 cells as a common spatial index for location features.",
+        "Preserve the independently expressed historical Leo formula and identify its difference from the published DIEM reference implementation.",
+        "Bound the private adapter to one fresh calculation at a time and cache three computed examples.",
+        "Keep software licensing and the Overture/OSM-derived data rights as separate review subjects.",
+        "The operator chooses reference stores using their own performance records; the engine compares their geographic context."
+      ],
+      "flow": [
+        "Select a reference London location or enter coordinates",
+        "Find its H3 cell and feature vector",
+        "Normalize features against the matrix",
+        "Score other cells and exclude the immediate neighbourhood",
+        "Review ranked matching cells on the map"
+      ],
+      "setup_url": "https://github.com/latintzar/retail-location-similarity/blob/main/README.md"
     },
     {
       "id": "geospatial-agent",
@@ -734,7 +953,21 @@
         "default_branch": "main",
         "license_api": "MIT",
         "archived": false
-      }
+      },
+      "audience": "Analysts exploring where to locate a business or understand the physical context of a place.",
+      "problem": "Geospatial questions span many datasets, sources and scales, making it hard to connect an analytical question to inspectable map evidence.",
+      "decisions": [
+        "Keep the conversation, plan and map layers in one workspace.",
+        "Stream tool and map events to the frontend as the analysis progresses.",
+        "Use separate cascade chat and location-similarity modes in the recovered interface."
+      ],
+      "flow": [
+        "Ask a geographic question",
+        "Inspect the proposed plan and streamed progress",
+        "Review map layers and results",
+        "Select a location for a separate similarity search"
+      ],
+      "setup_url": "https://github.com/latintzar/geospatial-agent/blob/main/docs/AGENT-SETUP.md"
     },
     {
       "id": "leo-vibe-maps",
@@ -776,91 +1009,236 @@
         "license_api": "MIT",
         "archived": false
       },
-      "distribution_url": "https://github.com/latintzar/leo-vibe-maps/releases/download/v0.1.0-source-beta/leo-vibe-maps.zip",
-      "distribution_kind": "extension"
+      "distribution_url": "https://github.com/latintzar/leo-vibe-maps/releases/download/v0.1.1-source-beta/leo-vibe-maps.zip",
+      "distribution_kind": "extension",
+      "audience": "Travellers choosing where to stay while comparing listings on accommodation maps.",
+      "problem": "A listing map shows prices and addresses while the character of nearby neighbourhoods requires separate research.",
+      "decisions": [
+        "Draw native map circles rather than a static image, keeping areas aligned with map navigation.",
+        "Separate the page content script, injected map code, toolbar popup and provider-calling background worker.",
+        "Keep the historical browser extension distinct from the separate geospatial agent console and retail similarity preview."
+      ],
+      "flow": [
+        "Open a supported map search",
+        "Activate the extension",
+        "Inspect coloured neighbourhood circles and tags",
+        "Select an area to zoom",
+        "Optionally provide a trip description for custom areas"
+      ],
+      "setup_url": "https://github.com/latintzar/leo-vibe-maps/blob/main/README.md"
     },
     {
       "id": "messier-57",
       "name": "Messier ’57",
       "category": "hardware",
       "site_url": "https://atelierneyra.com/hardware/messier-57",
-      "description": "An electric drum, with an acoustic feel, plugged right into an amp or guitar pedal.",
+      "description": "Messier ’57 is an electric drum with an acoustic feel, played through an amp or guitar pedal. I developed a playable electric drum around a mesh head, microphones and physical sound modelling, exploring a wider palette while preserving the touch of head and rim playing. The prototypes were tested by Ayo Salawu and Dru Masters and exhibited at the London Design Festival.",
       "source_status": "portfolio-case",
-      "status": "Read the case for concept, prototype and original process evidence."
+      "status": "Playable physical prototypes, musician tests and an exhibited instrument.",
+      "summary": "An electric drum with an acoustic feel.",
+      "audience": "Drummers, Electronic instrument builders",
+      "problem": "Drummers want more sonic range while keeping the touch and gestures they have spent years developing.",
+      "features": [
+        [
+          "Mechanism",
+          "Microphones capture head and rim excitation for a physical snare model. A mechanical latch controls the looseness of the synthesised snares."
+        ]
+      ],
+      "decisions": [
+        "The drum keeps a familiar shell, hoop, mesh head and stand.",
+        "A physical control changes the snare response during playing.",
+        "Prototype iterations explore the relationship between sensing, touch and sound."
+      ]
     },
     {
       "id": "panel-speakers",
       "name": "Panel Speakers",
       "category": "hardware",
       "site_url": "https://atelierneyra.com/hardware/panel-speakers",
-      "description": "Panel Speakers is a four-channel spatial audio system I built for the Architectural Association’s club night at Egg London. It was the world’s first spatial audio system with DML speakers in a club.",
+      "description": "Panel Speakers is a handmade four-channel DML system for spatial DJ sets and home listening. I built four French-polished birch panels with beech frames and two exciters per panel. Stem-separated tracks and a custom MainStage patch place musical parts around the room through a Denon multichannel receiver. The system played at Egg London and was later installed in a bedroom.",
       "source_status": "public-build-record",
-      "status": "A public BOM, build, signal-chain and design-decision record accompanies the original recordings. Inspect its listed remaining records before planning a fabrication build.",
+      "status": "Four handmade speakers, a working stem-routing setup and real club and bedroom installations.",
       "repository_url": "https://github.com/latintzar/panel-speakers",
-      "documentation_url": "https://github.com/latintzar/panel-speakers/tree/main/docs"
+      "documentation_url": "https://github.com/latintzar/panel-speakers/tree/main/docs",
+      "summary": "Handmade DML speakers for spatial DJ sets and home listening.",
+      "audience": "Club audiences, DJs, Home listeners",
+      "problem": "A club audience can move between musical parts when the sources are distributed around the room.",
+      "features": [
+        [
+          "Mechanism",
+          "Two exciters vibrate each thin panel. Instrument stems travel through a custom MainStage patch and multichannel receiver to four separate panels."
+        ]
+      ],
+      "decisions": [
+        "Thin birch faces and shallow beech frames combine broad radiation with a compact physical form.",
+        "Two integral wooden tabs at one end provide the suspension points.",
+        "The same end becomes the feet when the whole panel is inverted.",
+        "Original club and bedroom installations document the built result; new domestic images present the intended product context."
+      ]
     },
     {
       "id": "selva",
       "name": "Selva",
       "category": "hardware",
       "site_url": "https://atelierneyra.com/hardware/selva",
-      "description": "Selva is a biodiversity monitoring venture built around an airborne DNA sampler. Its early prototype draws air through a custom filter cartridge for lab sequencing, helping farms understand the life around them.",
+      "description": "Selva is an airborne DNA sampling system for biodiversity monitoring on farms. I developed an air sampler with a custom filter cartridge to collect biological particles for laboratory sequencing. The aim was to help farms understand the species around them and measure changes as they adopt regenerative practices.",
       "source_status": "portfolio-case",
-      "status": "Read the case for concept, prototype and original process evidence."
+      "status": "Exhibited early sampler prototype, retained fabrication CAD and field-trial development.",
+      "summary": "Airborne DNA sampling for farm biodiversity.",
+      "audience": "Farmers, Restoration teams, Biodiversity researchers",
+      "problem": "Farmers and restoration teams need repeatable evidence of the life around a site and how it changes over time.",
+      "features": [
+        [
+          "Mechanism",
+          "Air passes through a filter cartridge. Collected biological particles are sent for laboratory sequencing; the platform concept connects those results to location and land management."
+        ]
+      ],
+      "decisions": [
+        "A replaceable filter cartridge separates field collection from laboratory analysis.",
+        "The sampling enclosure and air passage were developed as printable parts for iteration.",
+        "Drone and ATV mounting explored wider field coverage.",
+        "Earlier bioacoustic monitoring and later airborne DNA sampling are separate stages of the venture."
+      ]
     },
     {
       "id": "speaker-orchestra",
       "name": "Speaker Orchestra",
       "category": "hardware",
       "site_url": "https://atelierneyra.com/hardware/speaker-orchestra",
-      "description": "Speaker Orchestra is an exploration of instrument-specific speakers and acoustic radiation patterns.",
+      "description": "Speaker Orchestra is an exploration of speakers voiced for individual musical instruments. I made two speakers for a flamenco duo, exploring how guitar and claps could occupy their own places in a room. Different radiating forms and materials were built, measured and tested with listeners.",
       "source_status": "portfolio-case",
-      "status": "Read the case for concept, prototype and original process evidence."
+      "status": "Two physical speaker prototypes, acoustic experiments and exhibition listening tests.",
+      "summary": "Speakers voiced for individual musical instruments.",
+      "audience": "Musicians, Installation audiences, Speaker designers",
+      "problem": "A recorded ensemble loses some of the spatial identity of its individual performers when every instrument comes from the same speaker.",
+      "features": [
+        [
+          "Mechanism",
+          "Different speaker forms and materials change how sound radiates into the room. The prototypes explore a square framed panel and a separate wooden bowl-shaped construction."
+        ]
+      ],
+      "decisions": [
+        "Each instrument prompted its own radiating form.",
+        "Listening tests and frequency-response measurements informed the material experiments.",
+        "The speaker occupies a performer’s place in the room as part of the arrangement."
+      ]
     },
     {
       "id": "sextet",
       "name": "Sextet",
       "category": "hardware",
       "site_url": "https://atelierneyra.com/hardware/sextet",
-      "description": "Sextet is a kinetic sculpture that turns the rhythms of individual musical instruments into movement.",
+      "description": "Sextet is a kinetic sculpture that turns seven musical parts into movement. I manually interpreted the instruments in Herbie Hancock’s “Chameleon” as motion, then played the movements through seven servos. With the music in headphones, each wooden ticker becomes a visible part of the arrangement.",
       "source_status": "portfolio-case",
-      "status": "Read the case for concept, prototype and original process evidence."
+      "status": "Working seven-servo MDF sculpture with synchronised, pre-recorded movements.",
+      "summary": "A seven-part kinetic sculpture driven by MIDI.",
+      "audience": "Exhibition visitors, Music learners, Performers",
+      "problem": "Listeners can hear a whole arrangement while finding it difficult to follow the rhythmic contribution of each instrument.",
+      "features": [
+        [
+          "Mechanism",
+          "Recorded automation in Logic Pro travels through a Python MIDI bridge to an Arduino R4 Minima driving seven servos."
+        ]
+      ],
+      "decisions": [
+        "One ticker represents one musical part.",
+        "Manually recorded motions preserve a musical interpretation of the performance.",
+        "Startup calibration takes each servo to both extremes, then returns the row to its aligned centre.",
+        "Laser-cut MDF and etched instrument labels make the prototype easy to build, inspect and read."
+      ]
     },
     {
       "id": "spatial-chamber",
       "name": "Spatial Chamber",
       "category": "hardware",
       "site_url": "https://atelierneyra.com/hardware/spatial-chamber",
-      "description": "Spatial Chamber is a 15-speaker spatial audio experience built around Sylvie Guillem’s 2016 performance of “Bolero”. I staged it in an RCA photography studio so visitors could move among the sounds of the orchestra.",
+      "description": "Spatial Chamber is a fifteen-speaker installation for experiencing recorded ballet spatially. I separated the orchestra in Sylvie Guillem’s “Bolero” recording into instrumental parts and placed the sounds around an RCA photography studio. A projected performance and fifteen floor speakers let visitors move among the music or lie down inside it.",
       "source_status": "portfolio-case",
-      "status": "Read the case for concept, prototype and original process evidence."
+      "status": "Installed and experienced by visitors in the RCA photography studio.",
+      "summary": "Recorded ballet through a fifteen-speaker installation.",
+      "audience": "Dance audiences, Small performance venues, Installation visitors",
+      "problem": "A recorded ballet presents the orchestra from a fixed listening position, while a live performance lets an audience attend to different players and sounds.",
+      "features": [
+        [
+          "Mechanism",
+          "Instrument stems are arranged in Logic Pro, assigned to hardware output groups and played through fifteen physical speakers around a projected recording."
+        ]
+      ],
+      "decisions": [
+        "Floor-level speakers let visitors choose their position among the sources.",
+        "The projected dancer remains visible across the installation.",
+        "Stem preparation and output routing connect the recorded orchestra to the room layout."
+      ]
     },
     {
       "id": "improv-coach",
       "name": "Improvisation Coach",
       "category": "hardware",
       "site_url": "https://atelierneyra.com/hardware/improv-coach",
-      "description": "Improvisation Coach is a practice device with a built-in synthesizer that guides players through improvisation exercises.",
+      "description": "Improvisation Coach is a Raspberry Pi practice device with a built-in synthesizer. Plug in a MIDI keyboard, switch it on and play within the exercise on its screen. A Raspberry Pi 4 running FluidSynth supplies the sounds; the small wooden enclosure holds the display, keyboard input, power and headphone connections.",
       "source_status": "portfolio-case",
-      "status": "Read the case for concept, prototype and original process evidence."
+      "status": "Working Raspberry Pi and FluidSynth device in a fabricated wooden enclosure.",
+      "summary": "A Raspberry Pi synthesizer with improvisation exercises.",
+      "audience": "Musicians practising improvisation",
+      "problem": "A musician can start practising more readily with a specific creative constraint to respond to.",
+      "features": [
+        [
+          "Mechanism",
+          "At startup, the device chooses an exercise. MIDI keyboard input drives FluidSynth on a Raspberry Pi 4, with sound available through the headphone output."
+        ]
+      ],
+      "decisions": [
+        "A randomly chosen exercise gives each session a clear starting point.",
+        "The synthesizer lives in the same device as the practice prompt.",
+        "A slanted display keeps the instruction visible beside the keyboard.",
+        "Finger-jointed MDF, engraved ports and laser-cut fabrication keep the prototype serviceable."
+      ]
     },
     {
       "id": "klara",
       "name": "Klara",
       "category": "hardware",
       "site_url": "https://atelierneyra.com/hardware/klara",
-      "description": "Klara is a behind-the-head headset that uses time-of-flight (ToF) sensors and spatial audio to tell you what’s around you.",
+      "description": "Klara is a behind-the-head headset that uses time-of-flight sensors and spatial audio to tell you what’s around you. I designed Klara for the OPPO × RCA challenge: an open-ear wearable that gives visually impaired people a sense of nearby objects and their direction. The band wraps behind the head, with compact sensing and audio modules beside the ears.",
       "source_status": "portfolio-case",
-      "status": "Read the case for concept, prototype and original process evidence."
+      "status": "Developed product concept for the OPPO × RCA challenge.",
+      "summary": "A ToF headset that describes nearby objects with spatial audio.",
+      "audience": "Visually impaired people",
+      "problem": "A wearer needs to locate nearby objects while hearing the environment around them.",
+      "features": [
+        [
+          "Mechanism",
+          "Time-of-flight sensors measure nearby distances. Directional audio cues communicate where the objects are."
+        ]
+      ],
+      "decisions": [
+        "A band behind the head keeps the ears open and puts the sensing modules close to the wearer’s point of view.",
+        "Flush sensing apertures give the latest concept a compact, continuous housing.",
+        "Spatial audio carries the directional information, leaving the wearer’s attention on the surroundings."
+      ]
     },
     {
       "id": "sound-to-movement",
       "name": "Sound to Movement",
       "category": "hardware",
       "site_url": "https://atelierneyra.com/hardware/sound-to-movement",
-      "description": "Sound to Movement is a book exploring how dancers turn sound into movement.",
+      "description": "Sound to Movement is a book examining how dancers turn sound into movement. I studied sound qualities, movement theory and dancers’ responses, then brought them together in a designed book. The spreads pair audio waveforms with movement sequences and Laban Efforts, including the contrasting examples “Erratic” and “Crescendo”.",
       "source_status": "portfolio-case",
-      "status": "Read the case for concept, prototype and original process evidence."
+      "status": "Completed 29-page designed book, with original PDF, print cover and editable publication files retained.",
+      "summary": "A book about how dancers turn sound into movement.",
+      "audience": "Dancers, Movement practitioners, Sound and interaction designers",
+      "problem": "Movement practitioners and designers need a way to examine how particular sonic qualities become gestures.",
+      "features": [
+        [
+          "Mechanism",
+          "The book places sound parameters, waveforms, movement sequences and Laban Efforts alongside one another for comparison."
+        ]
+      ],
+      "decisions": [
+        "A waveform and a sequence of stills make sound and movement readable on the same spread.",
+        "“Erratic” and “Crescendo” compare contrasting sound envelopes and physical responses.",
+        "The original landscape format gives the movement sequences room to unfold."
+      ]
     },
     {
       "id": "economist",
@@ -869,7 +1247,9 @@
       "description": "Weekly and personal editions, reading progress, audio and voice entry.",
       "site_url": "https://atelierneyra.com/economist/",
       "source_status": "text-case",
-      "status": "Permitted text case; original event source remains private."
+      "status": "Permitted text case; original event source remains private.",
+      "summary": "Weekly and personal editions, reading progress, audio and voice entry."
     }
-  ]
+  ],
+  "canonical_hardware_briefs": "https://atelierneyra.com/projects/hardware-briefs.json"
 }

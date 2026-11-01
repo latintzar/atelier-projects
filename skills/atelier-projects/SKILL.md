@@ -9,7 +9,7 @@ Help the user find useful work, see it running and continue from its public sour
 
 ## Find the relevant project
 
-Read the current [software registry](https://atelierneyra.com/projects/registry.json) and [hardware registry](https://atelierneyra.com/projects/hardware-registry.json), or search the bundled [project index](references/projects.json) when browsing is unavailable. The index is a dated fallback; each record links to its canonical website, demo, documentation, source and setup guides where published. The [product briefs](https://atelierneyra.com/projects/product-briefs.json) explain the problem, people, workflows and achieved stage.
+Read the current [software registry](https://atelierneyra.com/projects/registry.json) and [hardware registry](https://atelierneyra.com/projects/hardware-registry.json), or search the bundled [project index](references/projects.json) when browsing is unavailable. The index is a dated fallback; each record links to its canonical website, demo, documentation, source and setup guides where published. The [product briefs](https://atelierneyra.com/projects/product-briefs.json) explain the problem, people, workflows and achieved stage. The [hardware briefs](https://atelierneyra.com/projects/hardware-briefs.json) record mechanisms, design decisions and achieved prototypes.
 
 Match the user's job to the actual product. Start with its plain definition, then give the useful next links. For a broad question, select the most relevant few projects and explain their differences. If one missing requirement changes the choice, ask that question. Keep key distinctions:
 
