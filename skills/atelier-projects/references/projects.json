@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "retrieved_on": "2026-11-01",
+  "retrieved_on": "2026-11-02",
   "owner": "Atelier Neyra / Peter Neyra",
   "canonical_registry": "https://atelierneyra.com/projects/registry.json",
   "canonical_briefs": "https://atelierneyra.com/projects/product-briefs.json",
@@ -1026,6 +1026,49 @@
         "Optionally provide a trip description for custom areas"
       ],
       "setup_url": "https://github.com/latintzar/leo-vibe-maps/blob/main/README.md"
+    },
+    {
+      "id": "tactile-glove",
+      "name": "Artisan Glove",
+      "category": "hardware",
+      "site_url": "https://atelierneyra.com/hardware/tactile-glove",
+      "description": "Artisan Glove is a sensing-glove design for recording hand contact, vibration and video. I designed a glove and cuff to record the physical signals around a hand interaction. The V4 engineering brings together 20 pressure sites, 20 PVDF contact-vibration channels, two IMUs, an ESP32-S3, a cuff camera and SD recording.",
+      "source_status": "public-source-beta",
+      "status": "Dated ESP32-S3 compile, reproducible host checks and native KiCad/STL design. The canonical main board has 20 unconnected items; separate hand-tile manufacturing outputs exist. Physical assembled V4 qualification is pending. Earlier Bela Mini recordings are documented separately.",
+      "summary": "A sensing-glove design for contact, vibration and video.",
+      "audience": "Embedded hardware developers, Researchers recording hand interactions",
+      "problem": "People studying hand work need footage and touch measurements that describe the same interaction.",
+      "features": [
+        [
+          "Hand contact",
+          "20 pressure sites."
+        ],
+        [
+          "Contact vibration",
+          "20 PVDF sensing channels."
+        ],
+        [
+          "Motion and visual context",
+          "Two IMUs and a cuff camera."
+        ],
+        [
+          "Recording hardware",
+          "ESP32-S3 and SD-recording firmware."
+        ],
+        [
+          "Reusable engineering",
+          "Native KiCad design, firmware and enclosure geometry, with explicit main-board and physical-build status."
+        ]
+      ],
+      "decisions": [
+        "Keep contact sensing on the hand and recording electronics at the cuff.",
+        "Retain pressure, vibration, motion and visual context as distinct capture inputs.",
+        "Show the compact appearance concept alongside the actual 112 × 104 × 45.5 mm rigid enclosure.",
+        "Keep earlier single-contact-microphone Bela experiments distinct from V4 physical qualification."
+      ],
+      "repository_url": "https://github.com/latintzar/tactile-glove",
+      "preview_url": "https://atelierneyra.com/hardware/tactile-glove/viewer/",
+      "documentation_url": "https://docs.atelierneyra.com/tactile-glove/overview/"
     },
     {
       "id": "messier-57",
